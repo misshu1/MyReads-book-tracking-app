@@ -9,7 +9,7 @@ class BooksApp extends Component {
     return (
         <div className="app">
           <Route exact path='/' component={ Home } />
-          <Route path='/add-book' component={ AddBook } />
+          <Route path='/search' component={ AddBook } />
       </div>
     )
   }

@@ -40,7 +40,6 @@ class Home extends Component {
                 <h2 className="bookshelf-title">{title}</h2>
                 <div className="bookshelf-books">
                     <ol className="books-grid">
-                    {console.log(books, title)}
                         {books.map((book, index) =>
                             <Book
                                 key={index}
@@ -67,7 +66,7 @@ class Home extends Component {
                 </div>
             </div>
             <div className="open-search">
-                <Link to='/add-book'>Add a book</Link>
+                <Link to='/search'>Add a book</Link>
             </div>
         </div>
     )

@@ -5,13 +5,13 @@ const Book = ({ book, bookShelf }) => {
 
     const thumbnail = book.imageLinks ? book.imageLinks.smallThumbnail : 'https://via.placeholder.com/128x193?text=NoImage';
     
+    const authors = book.authors ? book.authors : 'Unspecified authors';
+    
     const bookStyle = {
         width: 128, 
         height: 193, 
         backgroundImage: `url(${thumbnail})`
     };
-
-
         return (
             <li>
                 <div className="book">
@@ -28,7 +28,7 @@ const Book = ({ book, bookShelf }) => {
                             </div>
                         </div>
                     <div className="book-title">{book.title}</div>
-                    <div className="book-authors">{book.authors}</div>
+                    <div className="book-authors">{authors}</div>
                 </div>
             </li>
         );
