@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 
 const Book = ({ book, bookShelf }) => {
 
+    //Fix the books with no image and no authors
     const thumbnail = book.imageLinks ? book.imageLinks.smallThumbnail : 'https://via.placeholder.com/128x193?text=NoImage';
-    
     const authors = book.authors ? book.authors : 'Unspecified authors';
-    
     const bookStyle = {
         width: 128, 
         height: 193, 
